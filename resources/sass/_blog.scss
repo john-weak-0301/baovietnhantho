@@ -1,0 +1,125 @@
+@media (min-width: 992px) {
+    .new-detail__title {
+        font-size: 42px;
+        line-height: 1.285;
+    }
+}
+
+.new-detail__entry {
+    h2, h3, h4, h5, h6 {
+        color: #272727;
+        font-weight: bold;
+        font-family: 'Avenir Next B';
+    }
+
+    h2 {
+        color: #2a79c0;
+        font-size: 27px;
+        line-height: 1.4;
+    }
+
+    h3 {
+        color: #dda307;
+        font-size: 24px;
+        line-height: 1.25;
+    }
+
+    h4 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    h5 {
+        font-size: 18px;
+        line-height: 1.388;
+    }
+
+    h6 {
+        font-size: 15px;
+        line-height: 1.466;
+    }
+
+    ul li,
+    ol li {
+        margin-bottom: 10px;
+    }
+
+    ul {
+        padding-left: 18px;
+        list-style-type: disc;
+    }
+
+    ol {
+        padding-left: 18px;
+        list-style: decimal;
+    }
+
+    blockquote a {
+        color: #ffdc7d;
+    }
+
+    figcaption {
+        text-align: center;
+    }
+}
+
+.layout-content__detail {
+    color: #333;
+    font-size: 17px;
+}
+
+.new-min-wrapper .new-list__title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.swiper-new-featured {
+    .new-featured {
+        display: none
+    }
+
+    .new-featured:first-child,
+    .swiper-container-horizontal .new-featured {
+        display: block !important;
+    }
+}
+
+.medium-zoom-overlay {
+    z-index: 1001;
+}
+
+.medium-zoom-image--opened {
+    z-index: 1005;
+}
+
+.layout-content__toc {
+    padding: 10px 20px;
+    background: #f9f9f9;
+    margin-bottom: 20px;
+
+    ul, ol {
+        margin: 0;
+        list-style: square;
+    }
+
+    li {
+        margin: 0 !important;
+        padding: 0;
+    }
+
+    ol, ul > ol, ul {
+        padding-left: 18px;
+    }
+}
+
+.layout-content__toc-heading {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 0 10px 0;
+    border-bottom: solid 1px #eaeaea;
+    padding-bottom: 5px;
+}

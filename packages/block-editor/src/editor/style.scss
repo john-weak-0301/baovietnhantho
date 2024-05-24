@@ -1,0 +1,24 @@
+/* Core Gutenberg styles for clients that aren't loading WordPress CSS */
+@import '@wordpress/components/build-style/style.css';
+@import '@wordpress/block-editor/build-style/style.css';
+@import '@wordpress/block-library/build-style/style.css';
+@import '@wordpress/block-library/build-style/editor.css';
+@import '@wordpress/block-library/build-style/theme.css';
+@import '@wordpress/format-library/build-style/style.css';
+@import '@wordpress/edit-post/build-style/style.css';
+
+.iso-editor {
+    --wp-admin-theme-color: red;
+    --wp-admin-theme-color-darker-10: #0073a1;
+    --wp-admin-theme-color-darker-20: #006187;
+    --wp-admin-border-width-focus: 0;
+
+    height: 100vh;
+    border: none !important;
+
+    .edit-post-layout.interface-interface-skeleton {
+        position: absolute !important;
+        left: 0 !important;
+        top: 0 !important;
+    }
+}

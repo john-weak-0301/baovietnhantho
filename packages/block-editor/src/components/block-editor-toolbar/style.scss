@@ -1,0 +1,22 @@
+@import '@wordpress/base-styles/_colors';
+@import '@wordpress/base-styles/_variables';
+@import '@wordpress/base-styles/_mixins';
+@import '@wordpress/base-styles/_breakpoints';
+@import '@wordpress/base-styles/_animations';
+@import '@wordpress/base-styles/_z-index';
+
+.edit-post-header {
+	// Make toolbar sticky on larger breakpoints
+	@include break-zoomed-in {
+		flex-wrap: nowrap;
+	}
+}
+
+.edit-post-header__settings {
+	display: inline-flex;
+	align-items: center;
+
+	button.components-button.has-icon {
+		margin-right: 0;
+	}
+}

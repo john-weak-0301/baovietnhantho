@@ -1,0 +1,100 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "./packages/core",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
+            "type": "path",
+            "url": "./packages/composer-cleanup-plugin",
+            "options": {
+                "symlink": false
+            }
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "anhskohbo/no-captcha": "^3.1",
+        "artesaos/seotools": "^0.14.0",
+        "core/core": "*",
+        "cyrildewit/eloquent-viewable": "^3.2",
+        "doctrine/dbal": "~2.3",
+        "embed/embed": "^3.3",
+        "fideloper/proxy": "^4.0",
+        "jorenvanhocht/laravel-share": "^2.0",
+        "kalnoy/nestedset": "^4.3",
+        "laravel/framework": "5.8.*",
+        "laravel/tinker": "^1.0",
+        "lavary/laravel-menu": "^1.7",
+        "league/flysystem-sftp": "^1.0",
+        "maatwebsite/excel": "^3.1",
+        "madnh/hanhchinhvn": "^1.2",
+        "predis/predis": "^1.1",
+        "rap2hpoutre/laravel-log-viewer": "^1.3",
+        "renatomarinho/laravel-page-speed": "^1.8",
+        "spatie/laravel-backup": "^6.2",
+        "spatie/laravel-responsecache": "^4.4.5",
+        "spatie/laravel-searchable": "^1.2|^1.3",
+        "symfony/options-resolver": "^4.2",
+        "themsaid/laravel-langman-gui": "^0.3.1",
+        "thunderer/shortcode": "0.5.*",
+        "webmozart/assert": "^1.4"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.2",
+        "barryvdh/laravel-ide-helper": "^2.5",
+        "beyondcode/laravel-dump-server": "^1.0",
+        "filp/whoops": "^2.0",
+        "fzaninotto/faker": "^1.4",
+        "mockery/mockery": "^1.0",
+        "nunomaduro/collision": "^2.0",
+        "phpunit/phpunit": "^7.5"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "platform": {
+            "php": "7.2.0"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+                "orchid/platform"
+            ]
+        }
+    },
+    "autoload": {
+        "files": [
+            "app/Helpers/Helper.php"
+        ],
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ]
+    }
+}

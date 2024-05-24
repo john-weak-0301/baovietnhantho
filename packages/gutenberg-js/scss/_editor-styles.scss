@@ -1,0 +1,87 @@
+.editor-styles-wrapper {
+    font-family: $editor-font;
+    font-size: $editor-font-size;
+    line-height: $editor-line-height;
+    color: $dark-gray-900;
+
+    p {
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    ul,
+    ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li,
+    ol li {
+        // This overrides a bottom margin globally applied to list items in wp-admin.
+        margin-bottom: initial;
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ol {
+        list-style-type: decimal;
+    }
+
+    ul ul,
+    ol ul {
+        list-style-type: circle;
+    }
+
+    // These are default editor styles
+    .wp-block {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .wp-block[data-align="wide"] {
+        max-width: 1100px;
+    }
+
+    .wp-block[data-align="full"] {
+        max-width: none;
+    }
+
+    [data-type="core/group"],
+    [data-type="core/section"] {
+        padding-top: 1px;
+        padding-bottom: 1px;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
+        background: #ffffff;
+        border-radius: 1px;
+
+        &.is-hovered {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+        }
+
+        &.is-selected {
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+        }
+    }
+
+    [data-type="core/group"] [data-type="core/group"],
+    [data-type="core/section"] [data-type="core/section"] {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    iframe.components-sandbox {
+        border: none;
+    }
+}
+
+.wp-block-html .block-editor-plain-text {
+    width: 100%;
+}
+
+.editor-post-title {
+    display: none !important;
+}

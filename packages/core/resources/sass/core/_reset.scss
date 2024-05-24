@@ -1,0 +1,58 @@
+body {
+  font-size: .9375rem;
+}
+
+h1, .h1 {
+  font-size: 1.5rem;
+  margin-bottom: $headings-margin-bottom;
+
+  @include media-breakpoint-up(md) {
+    font-size: $h1-font-size;
+  }
+}
+
+h2, .h2 {
+  @include font-size($h2-font-size);
+  margin-bottom: $headings-margin-bottom
+}
+
+h3, .h3 {
+  @include font-size($h3-font-size);
+  margin-bottom: ($headings-margin-bottom * .75)
+}
+
+h4, .h4 {
+  @include font-size($h4-font-size);
+  margin-bottom: ($headings-margin-bottom * .5)
+}
+
+h5, .h5 {
+  @include font-size($h5-font-size);
+  margin-bottom: ($headings-margin-bottom * .5)
+}
+
+h6, .h6 {
+  @include font-size($h6-font-size);
+  margin-bottom: ($headings-margin-bottom * .5)
+}
+
+// Links
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -.02em;
+
+  > a {
+    color: inherit;
+  }
+}
+
+// Type display classes
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
+  letter-spacing: -.02em;
+}
+
+h6.text-uppercase {
+  letter-spacing: .08em;
+}

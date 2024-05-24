@@ -1,0 +1,51 @@
+.ms-Icon,
+.ms-SearchBox-icon {
+  font-family: FabricMDL2Icons !important;
+}
+
+.ms-Dialog-main {
+  border-radius: 0.5rem;
+}
+
+.LinksPicker {
+  display: flex;
+  height: 337px;
+}
+
+.LinksPicker__side {
+  flex: 0 0 220px;
+  max-width: 220px;
+  padding-right: 1rem;
+
+  overflow-y: auto;
+}
+
+.LinksPicker__side > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+}
+
+.LinksPicker__main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 1rem;
+}
+
+.LinksPicker__search {
+  padding-bottom: 1rem;
+}
+
+.LinksPicker__results {
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow-y: auto;
+}
+
+.external-links a:hover {
+  text-decoration: underline;
+}

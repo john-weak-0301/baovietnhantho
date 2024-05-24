@@ -1,0 +1,159 @@
+.modal-open {
+    // Kill the scroll on the body
+    overflow: hidden;
+
+    .modal {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1050;
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 0
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: .5rem;
+    pointer-events: none
+}
+
+.modal-dialog-centered {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: calc(100% - 1rem)
+}
+
+.modal-dialog-centered::before {
+    display: block;
+    height: calc(100vh - 1rem);
+    content: ""
+}
+
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+    outline: 0
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75)
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 500px;
+        margin: 1.75rem auto
+    }
+
+    .modal-dialog-centered {
+        min-height: calc(100% - 3.5rem)
+    }
+
+    .modal-dialog-centered::before {
+        height: calc(100vh - 3.5rem)
+    }
+}
+
+#social-links {
+    @mixin socialColor($mainColor, $color: #fff) {
+        a > span {
+            color: $mainColor;
+        }
+
+        a:hover,
+        a:focus {
+            color: $color;
+            background-color: $mainColor;
+
+            > span {
+                color: $color;
+            }
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    li > a {
+        color: #343434;
+        display: flex;
+        align-items: center;
+        padding: 12px 15px;
+        line-height: 1;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            background-color: #343434;
+        }
+    }
+
+    li > a > span {
+        font-size: 28px;
+        display: block;
+        margin-right: 12px;
+    }
+
+    .share-fb {
+        @include socialColor(#3b5999);
+    }
+
+    .share-twitter {
+        @include socialColor(#55acee);
+    }
+
+    .share-pinterest {
+        @include socialColor(#bd081c);
+    }
+
+    .share-linkedin {
+        @include socialColor(#0077B5);
+    }
+}
+
+.header__info .info-submenu--dropdown {
+    padding: 0;
+    width: 280px;
+
+    a {
+        padding: 15px;
+        color: #2a79c0;
+        font-family: 'Avenir Next B';
+        font-size: 16px;
+
+        &:hover,
+        &:focus {
+            color: #dda307;
+        }
+    }
+}

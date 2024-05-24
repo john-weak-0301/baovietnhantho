@@ -1,0 +1,50 @@
+// Vendor
+@import "~sweetalert2/src/sweetalert2.scss";
+@import "~selectize/dist/css/selectize.css";
+@import "~selectize/dist/css/selectize.bootstrap3.css";
+
+// Element UI
+@import "~element-ui/lib/theme-chalk/index.css";
+
+// Bootstrap core functions, mixins
+// just for tabler works
+@import "./variables";
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Tabler
+//@import '~tabler-ui/src/assets/scss/dashboard/fonts/feather';
+//@import "./tabler";
+
+// Core styles
+@import "./core/mixins";
+@import "./core/reset";
+@import "./core/layout";
+@import "./core/general";
+@import "./core/main-content";
+
+@import "./components/checkbox";
+@import "./components/dropdowns";
+@import "./components/modal";
+@import "./components/header";
+
+// Utilities
+@import "./utilities/sizing";
+@import "./utilities/background";
+
+// Vendor plugins
+@import "vendor/nestable";
+@import "vendor/dropzone";
+@import "vendor/sweetalert2";
+@import "vendor/wp";
+@import "_media-views.css";
+
+.selectize-input {
+  border-radius: 1px;
+}
+
+.selectize-input.focus {
+  border-radius: 1px;
+  box-shadow: none !important;
+}

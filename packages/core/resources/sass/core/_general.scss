@@ -1,0 +1,182 @@
+.bg-lighter {
+  background-color: #f9fbfd !important;
+}
+
+.feather {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.input-icon-addon .feather {
+  width: 18px;
+  height: 18px;
+}
+
+.bootstrap-tagsinput:focus,
+.chosen-choices:focus,
+.chosen-single:focus,
+.form-control:focus {
+  border-color: #80bdff !important;
+  background-color: #fff !important;
+}
+
+.delete-link,
+.delete-link:hover,
+.delete-link:focus {
+  color: #c6271b !important;
+}
+
+.dropdown-menu {
+  border: none;
+  border-radius: 6px;
+}
+
+a.dropdown-ellipses {
+  color: #d2ddec;
+  font-size: 1.0625rem;
+  display: inline-block;
+  text-align: center;
+  padding: 0 3px;
+
+  .show > & {
+    color: #111;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.pin-none {
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto
+}
+
+.pin {
+  left: 0;
+  right: 0;
+}
+
+.pin,
+.pin-y {
+  top: 0;
+  bottom: 0
+}
+
+.pin-x {
+  right: 0;
+  left: 0
+}
+
+.pin-t {
+  top: 0
+}
+
+.pin-r {
+  right: 0
+}
+
+.pin-b {
+  bottom: 0
+}
+
+.pin-l {
+  left: 0
+}
+
+/* Table */
+.table tbody tr td {
+  padding: 1em !important;
+  border-top: 1px solid #e6e9ed !important;
+  border-bottom: 0 !important;
+}
+
+.table thead tr th,
+.table thead tr th:first-child {
+  padding: 0.75em 1em !important;
+}
+
+input.input-order {
+  width: 45px;
+  height: auto;
+  min-height: 10px;
+  line-height: 1em;
+  padding: 4px;
+  margin-right: 1em;
+  display: inline-block;
+  font-size: 13px;
+  position: relative;
+  z-index: 10;
+}
+
+.span-submenu-tree {
+  float: left;
+  margin-top: -42px;
+  margin-left: 15px;
+  display: inline-block;
+  width: 19px;
+  height: 55px;
+  background-image: url('../img/treepart_ltr.png');
+  opacity: 0.5;
+  position: relative;
+  z-index: 2;
+}
+
+.column-slug > a:before {
+  @include pseudoIcon;
+  content: "\E92F";
+  margin-right: 5px;
+  color: #898989;
+}
+
+.column-slug > a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+
+.column-with-image {
+  > img,
+  > .img-circular {
+    float: left;
+    margin-right: 7px;
+    width: 50px;
+    background-color: #eee;
+  }
+
+  > .img-circular {
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50px;
+  }
+
+  img {
+    max-width: 50px;
+    height: auto !important;
+  }
+}
+
+/* Media file column */
+.media-icon {
+  float: left;
+  width: 64px;
+  height: auto;
+  margin: 0 9px 0 0;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: top; /* Remove descender white-space. */
+  }
+}

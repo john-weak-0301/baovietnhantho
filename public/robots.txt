@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /*.js$
+Allow: /*.css$
+Disallow: /dashboard
+Sitemap: https://www.baovietnhantho.com.vn/sitemap.xml

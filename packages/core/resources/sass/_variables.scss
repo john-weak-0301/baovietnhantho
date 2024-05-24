@@ -1,0 +1,336 @@
+// Options
+$enable-rounded: true;
+$enable-shadows: false;
+$enable-gradients: false;
+$enable-transitions: false;
+$enable-hover-media-query: false;
+$enable-grid-classes: true;
+$enable-print-styles: true;
+
+// Colors
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #868e96;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$blue: #007bff;
+$azure: #45aaf2;
+$indigo: #6574cd;
+$purple: #a55eea;
+$pink: #f66d9b;
+$red: #cd201f;
+$orange: #fd9644;
+$yellow: #f1c40f;
+$lime: #7bd235;
+$green: #5eba00;
+$teal: #2bcbba;
+$cyan: #17a2b8;
+
+$primary: $blue;
+$secondary: $gray-600;
+$success: $green;
+$info: $azure;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+$white: #fff;
+$text-muted: #9aa0ac;
+$text-muted-dark: #6e7687;
+
+//Fonts
+$font-family-base: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$font-size-base: .9375rem;
+$font-size-lg: ($font-size-base * 1.133333333334); // 17px
+$font-size-sm: ($font-size-base * .866666667); // 13px
+$font-size-xs: ($font-size-base * .6666666667); // 10px
+
+$line-height-base: 1.5;
+
+$h1-font-size: 1.625rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.0625rem;
+$h4-font-size: 0.9375rem;
+$h5-font-size: 0.8125rem;
+$h6-font-size: 0.625rem;
+
+$small-font-size: 87.5%;
+
+$headings-margin-bottom: .61em;
+$headings-font-family: inherit;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
+$headings-color: inherit;
+
+$display1-size: 4rem;
+$display2-size: 3.25rem;
+$display3-size: 2.625rem;
+$display4-size: 2rem;
+
+$colors: (
+	"blue": $blue,
+	"azure": $azure,
+	"indigo": $indigo,
+	"purple": $purple,
+	"pink": $pink,
+	"red": $red,
+	"orange": $orange,
+	"yellow": $yellow,
+	"lime": $lime,
+	"green": $green,
+	"teal": $teal,
+	"cyan": $cyan,
+	"white": $white,
+	"gray": $gray-600,
+	"gray-dark": $gray-800
+);
+
+$theme-colors: (
+	"primary": $primary,
+	"secondary": $secondary,
+	"success": $success,
+	"info": $info,
+	"warning": $warning,
+	"danger": $danger,
+	"light": $light,
+	"dark": $dark
+);
+
+$social-colors: (
+	"facebook": #3b5998,
+	"twitter": #1da1f2,
+	"google": #dc4e41,
+	"youtube": #f00,
+	"vimeo": #1ab7ea,
+	"dribbble": #ea4c89,
+	"github": #181717,
+	"instagram": #e4405f,
+	"pinterest": #bd081c,
+	"vk": #6383a8,
+	"rss": #ffa500,
+	"flickr": #0063dc,
+	"bitbucket": #0052cc,
+);
+
+$body-bg: #f5f7fb;
+$body-color: $gray-700;
+
+// Code
+$code-font-size: 85%;
+$code-color: inherit;
+
+$kbd-color: #fff;
+$kbd-bg: $gray-800;
+
+$pre-color: $gray-900;
+
+// Yiq
+$yiq-contrasted-threshold: 190;
+$yiq-text-dark: $body-color;
+$yiq-text-light: $white;
+
+// Buttons
+$input-line-height: (24/15);
+$btn-line-height: (24/13);
+
+$input-line-height-sm: (16/14);
+$btn-line-height-sm: (16/12);
+
+$input-line-height-lg: (26/18);
+$btn-line-height-lg: (26/16);
+
+$input-btn-focus-width: 2px;
+
+$input-disabled-bg: $gray-100;
+
+$input-focus-border-color: #1991eb;
+$custom-select-focus-border-color: #1991eb;
+
+// Borders
+$border-width: 1px;
+//$border-color: #dee3eb;
+$border-color: rgba(0, 40, 100, .12);
+$border-color-dark: rgba(0, 40, 100, .24);
+
+// Inputs
+$input-bg: #fff;
+$input-height: 2.375rem;
+
+$input-color: $gray-700;
+$input-border-color: $border-color;
+$input-border-width: 1px;
+$input-box-shadow: inset 0 1px 1px rgba(#000, .075);
+
+$input-group-addon-border-color: $input-border-color;
+$input-group-addon-bg: #fbfbfc;
+
+$input-placeholder-color: $gray-500;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1280px
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1200px
+);
+
+// Header
+$header-bg: #0667d0;
+$header-color: #fff;
+$header-height: 4.5rem;
+
+// Cards
+$card-border-color: $border-color;
+$card-spacer-y: 1.5rem;
+$card-spacer-x: 1.5rem;
+
+// Alerts
+$alert-link-font-weight: 600;
+
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  -8: -($spacer * 9),
+  -7: -($spacer * 4.5),
+  -6: -($spacer * 3),
+  -5: -($spacer * 1.5),
+  -4: -$spacer,
+  -3: -($spacer * .5),
+  -2: -($spacer * .25),
+  -1: -($spacer * .125),
+	0: 0,
+  1: ($spacer * .125),
+  2: ($spacer * .25),
+  3: ($spacer * .5),
+  4: $spacer,
+  5: ($spacer * 1.5),
+  6: ($spacer * 3),
+  7: ($spacer * 4.5),
+  8: ($spacer * 9)
+);
+
+$sizes: (
+	0: 0,
+	1: $spacer * .25,
+	2: $spacer * .5,
+	3: $spacer * .75,
+	4: $spacer * 1,
+	5: $spacer * 1.5,
+	6: $spacer * 2,
+	7: $spacer * 3,
+	8: $spacer * 4,
+	9: $spacer * 6,
+	25: 25%,
+	50: 50%,
+	75: 75%,
+	100: 100%,
+	auto: auto
+);
+
+// Footer
+$footer-bg: #fff;
+
+// Dropdowns
+$dropdown-border-color: $border-color;
+$dropdown-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+// Z-index
+$zindex-overlay: 900;
+$zindex-dropdown: 1000;
+$zindex-sticky: 1020;
+$zindex-fixed: 1030;
+$zindex-modal-backdrop: 1040;
+$zindex-modal: 1050;
+$zindex-popover: 1060;
+$zindex-tooltip: 1070;
+
+// Components
+$border-radius: 3px;
+$border-radius-lg: 3px;
+$border-radius-sm: 3px;
+
+// Tables
+$table-accent-bg: rgba(0, 0, 0, .02);
+$table-hover-bg: rgba(0, 0, 0, .04);
+
+$custom-select-padding-y: .5rem;
+$custom-select-padding-x: .75rem;
+
+$custom-select-indicator-color: #999;
+$custom-select-indicator: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 5'%3E%3Cpath fill='#{$custom-select-indicator-color}' d='M0 0L10 0L5 5L0 0'/%3E%3C/svg%3E");
+
+// List group
+$list-group-border-color: $border-color;
+$list-group-active-color: $primary;
+$list-group-active-bg: mix($primary, #fff, 4%);
+$list-group-active-border-color: $list-group-border-color;
+
+// Popovers
+$popover-body-padding-y: .75rem;
+$popover-body-padding-x: 1rem;
+$popover-border-color: #dee3eb;
+$popover-body-color: $text-muted-dark;
+$popover-arrow-width: .5rem;
+$popover-arrow-height: .5rem;
+
+// Badges
+$badge-font-weight: 600;
+
+// Hr
+$hr-border-color: $border-color;
+
+// Thumbnails
+$thumbnail-bg: #fff;
+
+// Pagination
+$pagination-color: $body-color;
+$pagination-disabled-color: $gray-400;
+
+// Navs
+$nav-link-padding-y: .5rem !default;
+$nav-link-padding-x: 1rem !default;
+
+$nav-tabs-link-active-border-width: 1px !default;
+$nav-tabs-link-margin-x: .75rem !default; // Margin used for X so active underline matches width of label
+$nav-tabs-link-padding-y: $card-spacer-y !default; // This keeps the height the same as the card header
+
+$nav-tabs-sm-font-size: .8125rem !default;
+$nav-tabs-sm-link-margin-x: .5rem !default;
+
+$nav-tabs-link-active-bg: transparent;
+
+// Navbar
+$navbar-vertical-width: 250px !default;
+$navbar-vertical-padding-x: 1.5rem !default;
+
+$navbar-icon-min-width: 1.75rem !default;
+
+$navbar-breadcrumb-padding-y: $nav-link-padding-y !default;
+$navbar-breadcrumb-padding-x: 0 !default;
+
+$navbar-dark-bg: $dark !default;
+$navbar-dark-border-color: fade-out($white, .8) !default;
+$navbar-dark-heading-color: fade-out($white, .6) !default;
+$navbar-dark-divider-color: fade-out($white, .8) !default;
+$navbar-dark-brand-filter: brightness(0) invert(1);
+
+$navbar-light-bg: $white !default;
+$navbar-light-border-color: $border-color !default;
+$navbar-light-heading-color: $text-muted !default;
+$navbar-light-divider-color: $border-color !default;
+$navbar-light-brand-filter: none;

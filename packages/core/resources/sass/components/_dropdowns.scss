@@ -1,0 +1,42 @@
+.dropdown-item {
+  color: $gray-600;
+}
+
+.dropdown-ellipses {
+  color: $gray-400;
+  font-size: $font-size-lg;
+
+  &:hover,
+  &:focus {
+    color: #1657af;
+  }
+}
+
+.dropdown-ellipses::after {
+  display: none;
+}
+
+button.dropdown-ellipses {
+  border: none;
+  background: transparent;
+  line-height: 1;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+
+  &:focus {
+    background-color: #fafafa;
+    transition: background-color 0.3s ease-in;
+  }
+}
+
+.with-dropdown-action {
+  .dropdown-toggle {
+    display: none;
+  }
+
+  &:hover .dropdown-toggle {
+    display: block;
+  }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Footer" transform="translate(-1525.000000, -58.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Combined-Shape-Copy">
+                <path d="M1536.79917,64.5625 L1531.83709,59.6004126 C1531.47097,59.2342961 1531.47097,58.6407039 1531.83709,58.2745874 C1532.2032,57.9084709 1532.7968,57.9084709 1533.16291,58.2745874 L1539.72541,64.8370874 C1540.09153,65.2032039 1540.09153,65.7967961 1539.72541,66.1629126 L1533.16291,72.7254126 C1532.7968,73.0915291 1532.2032,73.0915291 1531.83709,72.7254126 C1531.47097,72.3592961 1531.47097,71.7657039 1531.83709,71.3995874 L1536.79917,66.4375 L1525.9375,66.4375 C1525.41973,66.4375 1525,66.017767 1525,65.5 C1525,64.982233 1525.41973,64.5625 1525.9375,64.5625 L1536.79917,64.5625 Z" transform="translate(1532.500000, 65.500000) scale(1, -1) rotate(90.000000) translate(-1532.500000, -65.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

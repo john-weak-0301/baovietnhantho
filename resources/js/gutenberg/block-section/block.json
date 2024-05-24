@@ -1,0 +1,20 @@
+{
+    "name": "core/section",
+    "category": "layout",
+    "attributes": {
+        "fluidContainer": {
+            "type": "bool",
+            "default": false
+        },
+        "darkSkin": {
+            "type": "bool",
+            "default": false
+        },
+        "backgroundColor": {
+            "type": "string"
+        },
+        "customBackgroundColor": {
+            "type": "string"
+        }
+    }
+}

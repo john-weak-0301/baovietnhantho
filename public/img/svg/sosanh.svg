@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+    <title>bx-copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="20/02" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="02_01_Giải-pháp" transform="translate(-1240.000000, -735.000000)" fill="#5B5B5B" fill-rule="nonzero">
+            <g id="bx-copy" transform="translate(1240.000000, 735.000000)">
+                <path d="M13,6 L1,6 C0.44771525,6 0,6.44771525 0,7 L0,19 C0,19.5522847 0.44771525,20 1,20 L13,20 C13.5522847,20 14,19.5522847 14,19 L14,7 C14,6.44771525 13.5522847,6 13,6 Z M12,18 L2,18 L2,8 L12,8 L12,18 Z" id="Shape"></path>
+                <path d="M19,0 L7,0 C6.44771525,0 6,0.44771525 6,1 L6,4 L8,4 L8,2 L18,2 L18,12 L16,12 L16,14 L19,14 C19.5522847,14 20,13.5522847 20,13 L20,1 C20,0.44771525 19.5522847,0 19,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

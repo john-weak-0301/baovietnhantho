@@ -1,0 +1,30 @@
+@mixin placeholder($color: $input-color-placeholder) {
+  // Firefox
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+  // Internet Explorer 10+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  // Internet Explorer 10+
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin pseudoIcon() {
+  font-family: o-icon !important;
+  speak: none;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  vertical-align: middle;
+}

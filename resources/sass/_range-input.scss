@@ -1,0 +1,170 @@
+$custom-forms-transition: all 0.2s ease;
+
+$custom-range-track-width: 100% !default;
+$custom-range-track-height: .5rem !default;
+$custom-range-track-cursor: pointer !default;
+$custom-range-track-bg: #e5e5e5 !default;
+$custom-range-track-border-radius: 0 !default;
+$custom-range-track-box-shadow: none !default;
+
+$custom-range-thumb-width: 2.5rem !default;
+$custom-range-thumb-height: $custom-range-thumb-width !default;
+$custom-range-thumb-bg: #00a2db !default;
+$custom-range-thumb-border: solid 4px #fff !default;
+$custom-range-thumb-border-radius: 2.5rem !default;
+$custom-range-thumb-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5) !default;
+$custom-range-thumb-focus-box-shadow: $custom-range-thumb-box-shadow !default;
+$custom-range-thumb-focus-box-shadow-width: 4px !default; // For focus box shadow issue in IE/Edge
+$custom-range-thumb-active-bg: darken($custom-range-thumb-bg, 5%) !default;
+$custom-range-thumb-disabled-bg: #eee !default;
+
+.range-input {
+    width: 100%;
+    height: calc(#{$custom-range-thumb-height} + #{$custom-range-thumb-focus-box-shadow-width * 2});
+    padding: 0; // Need to reset padding
+    background-color: transparent;
+    appearance: none;
+
+    &:focus {
+        outline: none;
+
+        // Pseudo-elements must be split across multiple rulesets to have an effect.
+        // No box-shadow() mixin for focus accessibility.
+        &::-webkit-slider-thumb {
+            box-shadow: $custom-range-thumb-focus-box-shadow;
+        }
+
+        &::-moz-range-thumb {
+            box-shadow: $custom-range-thumb-focus-box-shadow;
+        }
+
+        &::-ms-thumb {
+            box-shadow: $custom-range-thumb-focus-box-shadow;
+        }
+    }
+
+    &::-moz-focus-outer {
+        border: 0;
+    }
+
+    &::-webkit-slider-thumb {
+        width: $custom-range-thumb-width;
+        height: $custom-range-thumb-height;
+        margin-top: ($custom-range-track-height - $custom-range-thumb-height) / 2; // Webkit specific
+        background-color: $custom-range-thumb-bg;
+        border: $custom-range-thumb-border;
+        border-radius: $custom-range-thumb-border-radius;
+        box-shadow: $custom-range-thumb-box-shadow;
+        transition: $custom-forms-transition;
+        appearance: none;
+
+        &:active {
+            background-color: $custom-range-thumb-active-bg;
+        }
+    }
+
+    &::-webkit-slider-runnable-track {
+        width: $custom-range-track-width;
+        height: $custom-range-track-height;
+        color: transparent; // Why?
+        cursor: $custom-range-track-cursor;
+        background-color: $custom-range-track-bg;
+        border-color: transparent;
+        border-radius: $custom-range-track-border-radius;
+        box-shadow: $custom-range-track-box-shadow;
+    }
+
+    &::-moz-range-thumb {
+        width: $custom-range-thumb-width;
+        height: $custom-range-thumb-height;
+        background-color: $custom-range-thumb-bg;
+        border: $custom-range-thumb-border;
+        border-radius: $custom-range-thumb-border-radius;
+        box-shadow: $custom-range-thumb-box-shadow;
+        transition: $custom-forms-transition;
+        appearance: none;
+
+        &:active {
+            background-color: $custom-range-thumb-active-bg;
+        }
+    }
+
+    &::-moz-range-track {
+        width: $custom-range-track-width;
+        height: $custom-range-track-height;
+        color: transparent;
+        cursor: $custom-range-track-cursor;
+        background-color: $custom-range-track-bg;
+        border-color: transparent; // Firefox specific?
+        border-radius: $custom-range-track-border-radius;
+        box-shadow: $custom-range-track-box-shadow;
+    }
+
+    &::-ms-thumb {
+        width: $custom-range-thumb-width;
+        height: $custom-range-thumb-height;
+        margin-top: 0; // Edge specific
+        margin-right: $custom-range-thumb-focus-box-shadow-width; // Workaround that overflowed box-shadow is hidden.
+        margin-left: $custom-range-thumb-focus-box-shadow-width; // Workaround that overflowed box-shadow is hidden.
+        background-color: $custom-range-thumb-bg;
+        border: $custom-range-thumb-border;
+        border-radius: $custom-range-thumb-border-radius;
+        box-shadow: $custom-range-thumb-box-shadow;
+        transition: $custom-forms-transition;
+        appearance: none;
+
+        &:active {
+            background-color: $custom-range-thumb-active-bg;
+        }
+    }
+
+    &::-ms-track {
+        width: $custom-range-track-width;
+        height: $custom-range-track-height;
+        color: transparent;
+        cursor: $custom-range-track-cursor;
+        background-color: transparent;
+        border-color: transparent;
+        border-width: $custom-range-thumb-height / 2;
+        box-shadow: $custom-range-track-box-shadow;
+    }
+
+    &::-ms-fill-lower {
+        background-color: $custom-range-track-bg;
+        border-radius: $custom-range-track-border-radius;
+    }
+
+    &::-ms-fill-upper {
+        margin-right: 15px; // arbitrary?
+        background-color: $custom-range-track-bg;
+        border-radius: $custom-range-track-border-radius;
+    }
+
+    &:disabled {
+        &::-webkit-slider-thumb {
+            background-color: $custom-range-thumb-disabled-bg;
+        }
+
+        &::-webkit-slider-runnable-track {
+            cursor: default;
+        }
+
+        &::-moz-range-thumb {
+            background-color: $custom-range-thumb-disabled-bg;
+        }
+
+        &::-moz-range-track {
+            cursor: default;
+        }
+
+        &::-ms-thumb {
+            background-color: $custom-range-thumb-disabled-bg;
+        }
+    }
+}
+
+.rangerbox {
+    margin-top: 0 !important;
+    height: auto !important;
+    background-color: transparent !important;
+}

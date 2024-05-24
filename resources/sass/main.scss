@@ -1,0 +1,90 @@
+@import "../libs/bootstrap/grid.css";
+@import "_main.css";
+
+@import "blog";
+@import "search";
+@import "range-input";
+@import "addition";
+@import "dropdown";
+@import "sweetalert2";
+
+@media (max-width: 1023px) {
+    .fb_dialog.fb_dialog_advanced {
+        bottom: 48pt !important;
+    }
+
+    iframe.fb_customer_chat_bounce_in_v2 {
+        bottom: 93pt !important;
+    }
+
+    iframe.fb_customer_chat_bounce_out_v2 {
+        bottom: 93pt !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-bottom: 10px !important;
+    }
+
+    .hero:before {
+        display: none;
+    }
+}
+
+.category-min__toggle > button {
+    font-size: 22px;
+    color: #fff;
+    border: none;
+    background: #2a79c0;
+    line-height: 1;
+    display: block;
+    padding: 5px;
+    width: 100%;
+    outline: 0;
+    box-shadow: none;
+}
+
+.category-min.isHidden .category-min__toggle {
+    position: absolute;
+    z-index: 1001;
+    right: -28px;
+
+    > button {
+        width: 28px;
+        text-align: center;
+    }
+
+    .fa:before {
+        content: "\f105";
+    }
+}
+
+.category-min.category-min--show.isOpen {
+    transform: translateY(-50%) translateX(0) !important;
+}
+
+.category-min.category-min--show.isHidden {
+    transform: translateY(-50%) translateX(-100%) !important;
+}
+
+@media (max-width: 1139px), (min-width: 1200px) and (max-width: 1350px) {
+    .category-min.category-min--show {
+        transform: translateY(-50%) translateX(-100%) !important;
+    }
+
+    .category-min:not(.isOpen) .category-min__toggle {
+        position: absolute;
+        z-index: 1001;
+        right: -28px;
+
+        > button {
+            width: 28px;
+            text-align: center;
+        }
+
+        .fa:before {
+            content: "\f105";
+        }
+    }
+}

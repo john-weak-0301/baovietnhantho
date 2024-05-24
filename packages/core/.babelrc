@@ -1,0 +1,15 @@
+{
+    "plugins": [
+        "@babel/plugin-syntax-jsx",
+        "@babel/plugin-proposal-class-properties",
+        "@babel/plugin-proposal-object-rest-spread",
+        "@vue/babel-plugin-transform-vue-jsx",
+        [
+            "component",
+            {
+                "libraryName": "element-ui",
+                "styleLibraryName": "theme-chalk"
+            }
+        ]
+    ]
+}

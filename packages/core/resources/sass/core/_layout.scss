@@ -1,0 +1,41 @@
+.app:before {
+  display: none !important;
+}
+
+.avatar-lg .avatar-status {
+  width: 0.85rem;
+  height: 0.85rem;
+}
+
+@include media-breakpoint-up(md) {
+  .avatar-xxl {
+    width: 8rem;
+    height: 8rem;
+    font-size: 2.66667rem;
+  }
+}
+
+.modal {
+  .modal-header {
+    padding: 1rem;
+    display: flex;
+    text-align: left;
+  }
+
+  .modal-content {
+    border: none;
+    border-radius: 0.5rem;
+  }
+
+  .modal-footer {
+    padding: 1em !important;
+  }
+}
+
+.list-group-item {
+  border-color: #edf1f3;
+}
+
+.list-group-flush .list-group-item:first-child {
+  border-top: 0;
+}

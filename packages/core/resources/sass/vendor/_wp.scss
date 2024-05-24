@@ -1,0 +1,57 @@
+/* Hide visually but not from screen readers */
+.screen-reader-text,
+.screen-reader-text span,
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important; /* many screen reader and browser combinations announce broken words as they would appear visually */
+}
+
+.button .screen-reader-text {
+  height: auto; /* Fixes a Safari+VoiceOver bug, see ticket #42006 */
+}
+
+.hidden,
+.js .closed .inside,
+.js .hide-if-js,
+.no-js .hide-if-no-js,
+.js.wp-core-ui .hide-if-js,
+.js .wp-core-ui .hide-if-js,
+.no-js.wp-core-ui .hide-if-no-js,
+.no-js .wp-core-ui .hide-if-no-js {
+  display: none;
+}
+
+/* Buttons that look like links, for a cross of good semantics with the visual */
+.wp-core-ui .button-link {
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  /* Mimics the default link style in common.css */
+  color: #0073aa;
+  text-decoration: underline;
+  transition-property: border, background, color;
+  transition-duration: .05s;
+  transition-timing-function: ease-in-out;
+}
+
+.wp-core-ui .button-link-delete {
+  color: #a00;
+}
+
+.wp-core-ui .button-link-delete:hover,
+.wp-core-ui .button-link-delete:focus {
+  color: #dc3232;
+}
